@@ -1,3 +1,5 @@
+/* built in tags such as h1 or p do not require a "." but when it's a class, it needs a "." */
+
 body {
   background-image: url(https://cdn.freecodecamp.org/curriculum/css-cafe/beans.jpg);
   font-family: sans-serif;
@@ -82,14 +84,14 @@ a {
   color: black;
 }
 
-a:visited {
+a:visited { /* changes the color of a visited link */
   color: black;
 }
 
-a:hover {
+a:hover { /* changes when the element is hovered on */
   color: brown;
 }
 
-a:active {
+a:active { /* represents an element (such as a button) that is being activated by the user.*/
   color: brown;
 }
