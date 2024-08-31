@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Survey</title>
+    <link href="styles.css" rel="stylesheet"/>
+  </head>
+
+  <body>
+    <div id="header">
+      <h1 id="title">Generic Coffee Shop: Leave a review!</h1>
+      <p id="description">Leaving a review for our coffee shop helps us understand what we're doing right and where we can improve. Your feedback not only guides us in enhancing our service and offerings, but it also helps other coffee lovers discover a place they might enjoy.</p>
+    </div>
+
+    <div id="surveyDiv">
+      <form id="survey-form">
+
+        <fieldset>
+           <label for="first-name">Enter Your Name: <input id="name" name="first-name" type="text" required /></label>
+        <label for="email">Enter Your Email: <input id="email" name="email" type="email" required /></label>
+        </fieldset>
+
+        <fieldset>
+          <label for="age">Please rate your experience today on a scale from 1 to 10.: <input id="number" type="number" name="ranking" min="1" max="10" /></label>
+        </fieldset>
+
+        <fieldset>
+          <legend>Would you recommend Generic Coffee Shop to a friend?</legend>
+            <label id="positive"><input id="positive" type="radio" name="recommendation" checked/>For sure!</label>
+            <label id="neutral"><input id="neutral" type="radio" name="recommendation" />Maybe</label>
+            <label id="positive"><input id="negative" type="radio" name="recommendation" />Not sure</label>
+        </fieldset>
+    
+        <fieldset>
+          <label for="referrer">How did you hear about us?
+          <select id="referrer" name="referrer">
+            <option value="">(select one)</option>
+            <option value="1">Social Media</option>
+            <option value="2">Word of Mouth</option>
+            <option value="3">Advertisements</option>
+            <option value="5">Walked in off the street</option>
+            <option value="4">Other</option>
+          </select>
+        </label>
+        </fieldset>
+
+
+      <form>
+    </div>
+
+  </body>
+
+  <footer>
+  </footer>
