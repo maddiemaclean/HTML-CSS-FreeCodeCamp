@@ -17,24 +17,24 @@
       <form id="survey-form">
 
         <fieldset>
-           <label for="first-name">Enter Your Name: <input id="name" name="first-name" type="text" required /></label>
-        <label for="email">Enter Your Email: <input id="email" name="email" type="email" required /></label>
+           <label for="first-name" id="name-label">Enter Your Name: <input id="name" name="first-name" type="text" required  placeholder="name"/></label>
+        <label for="email" id="email-label">Enter Your Email: <input id="email" name="email" type="email" required placeholder="email"/></label>
         </fieldset>
 
         <fieldset>
-          <label for="age">Please rate your experience today on a scale from 1 to 10.: <input id="number" type="number" name="ranking" min="1" max="10" /></label>
+          <label for="age" id="number-label">Please rate your experience today on a scale from 1 to 10.: <input id="number" type="number" name="ranking" min="1" max="10" placeholder="number" /></label>
         </fieldset>
 
         <fieldset>
           <legend>Would you recommend Generic Coffee Shop to a friend?</legend>
-            <label id="positive"><input id="positive" type="radio" name="recommendation" checked/>For sure!</label>
-            <label id="neutral"><input id="neutral" type="radio" name="recommendation" />Maybe</label>
-            <label id="positive"><input id="negative" type="radio" name="recommendation" />Not sure</label>
+            <label id="positive"><input id="positive" value="positive" type="radio" name="recommendation" checked/>For sure!</label>
+            <label id="neutral"><input id="neutral" value="neutral" type="radio" name="recommendation" />Maybe</label>
+            <label id="positive"><input id="negative" value="negative" type="radio" name="recommendation" />Not sure</label>
         </fieldset>
     
         <fieldset>
-          <label for="referrer">How did you hear about us?
-          <select id="referrer" name="referrer">
+          <label for="dropdown">How did you hear about us?
+          <select id="dropdown" id="survey-form" name="referrer" >
             <option value="">(select one)</option>
             <option value="1">Social Media</option>
             <option value="2">Word of Mouth</option>
@@ -45,6 +45,26 @@
         </label>
         </fieldset>
 
+        <fieldset>
+          <label for="checks">What would you like to see improved?</label>
+           <input id="survey-form" id="option1" name="option1" value="menu" type="checkbox"/>
+           <label for="option1">More menu options</label>
+           <input id="survey-form" id="option2" name="option2" value="seating" type="checkbox"/>
+           <label for="option1">Improved seating</label>
+           <input id="survey-form" id="option3" name="option3" value="faster" type="checkbox"/>
+           <label for="option1">Faster service</label>
+           <input id="survey-form" id="option4" name="option4" value="food" type="checkbox"/>
+           <label for="option1">Have more food available</label>
+        
+        </fieldset>
+
+        <fieldset>
+          <label for="bio">Extra comments:
+          <textarea id="bio" id="survey-form" name="bio" rows="3" cols="30" placeholder="Please leave any additional comments here..."></textarea>
+        </label>
+      </fieldset>
+
+       <button id="submit" id="survey-form" type="submit">Submit</button>
 
       <form>
     </div>
